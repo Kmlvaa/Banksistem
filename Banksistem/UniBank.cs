@@ -28,7 +28,7 @@
             Balance = Balance - amount - ((amount * 1.5m) / 100);
             Console.WriteLine("Unibank balance is: " + Balance);
             }
-           
+           else Console.WriteLine("Balance is not enough");
         }
 
     }

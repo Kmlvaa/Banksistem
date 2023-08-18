@@ -24,7 +24,7 @@
             Balance -= amount;
             Console.WriteLine("LeoBank balance is: " + Balance);
             }
-           
+            else Console.WriteLine("Balance is not enough");
         }
     }
 }

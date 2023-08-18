@@ -28,8 +28,8 @@
                 Balance = Balance - amount - ((amount * 1.1m) / 100);
                 Console.WriteLine("PashaBank balance is: " + Balance);
             }
-               
-            }
+            else Console.WriteLine("Balance is not enough");
+        }
 
         }
 

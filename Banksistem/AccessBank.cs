@@ -24,7 +24,7 @@
             Balance = Balance - amount - ((amount * 1.6m) / 100);
             Console.WriteLine("AccessBank balance is: " + Balance);
             }
-            
+            else Console.WriteLine("Balance is not enough");
         }
 
 
