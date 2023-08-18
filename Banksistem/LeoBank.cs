@@ -19,8 +19,12 @@
         }
         public override void WithDraw(decimal amount)
         {
+            if(Balance > amount)
+            {
             Balance -= amount;
             Console.WriteLine("LeoBank balance is: " + Balance);
+            }
+           
         }
     }
 }

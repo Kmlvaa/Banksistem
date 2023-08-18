@@ -23,8 +23,12 @@
         }
         public override void WithDraw(decimal amount)
         {
+            if(Balance > amount)
+            {
             Balance = Balance - amount - ((amount * 1.5m) / 100);
             Console.WriteLine("Unibank balance is: " + Balance);
+            }
+           
         }
 
     }

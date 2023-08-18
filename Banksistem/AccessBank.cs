@@ -19,8 +19,12 @@
         }
         public override void WithDraw(decimal amount)
         {
+            if(Balance > amount)
+            {
             Balance = Balance - amount - ((amount * 1.6m) / 100);
             Console.WriteLine("AccessBank balance is: " + Balance);
+            }
+            
         }
 
 

@@ -15,18 +15,8 @@
             CVV = cvv;
             Balance = balance;
         }
-    
-        public virtual void Deposit(decimal amount)
-        {
-            Balance += amount;
-            Console.WriteLine("Balance is: " + Balance);
-        }
-        public virtual void WithDraw(decimal amount)
-        {
-            Balance -= amount;
-            Console.WriteLine("Balance is: " + Balance);
-        }
-
+        public abstract void Deposit(decimal amount);
+        public abstract void WithDraw(decimal amount);
     }
     internal class Program
     {
@@ -39,7 +29,7 @@
             var access = new AccessBank("Samira", "Kamilova", "1111000011110000", 012, 100m);
             access.Deposit(50);
             access.WithDraw(25);
-            var pashabank = new PashaBank("Samira", "Kamilova", "1111000011110000", 012, 100m);
+            var pashabank = new PashaBank("Samira", "Kamilova", "1111000011110000", 012, 200);
             pashabank.Deposit(50);
             pashabank.WithDraw(25);
             var leobank = new LeoBank("Samira", "Kamilova", "1111000011110000", 012, 250m);
