@@ -23,9 +23,9 @@
     {
         static void Main(string[] args)
         {
-            var unibank = new UniBank("Samira", "Kamilova", "1111000011110000", 012, 50m);
+            var unibank = new UniBank("Samira", "Kamilova", "1111000011110000", 012, 20);
             Console.WriteLine(unibank.ToString());
-            unibank.WithDraw(25);
+            unibank.WithDraw(12);
             unibank.Deposit(50);
             var access = new AccessBank("Samira", "Kamilova", "1111000011110000", 012, 100m);
             access.Deposit(50);
