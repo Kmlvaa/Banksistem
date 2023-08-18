@@ -16,17 +16,8 @@
             Balance = balance;
         }
     
-        public virtual void Deposit(decimal amount)
-        {
-            Balance += amount;
-            Console.WriteLine("Balance is: " + Balance);
-        }
-        public virtual void WithDraw(decimal amount)
-        {
-            Balance -= amount;
-            Console.WriteLine("Balance is: " + Balance);
-        }
-
+        public abstract void Deposit(decimal amount)
+        public abstract void WithDraw(decimal amount)
     }
     internal class Program
     {
