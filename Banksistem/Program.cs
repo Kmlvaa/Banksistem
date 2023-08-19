@@ -1,6 +1,6 @@
 ﻿namespace Banksistem
 {
-    public abstract partial class Bank
+    public abstract class Bank
     {
         protected string Name { get; set; }
         protected string Surname { get; set; }
